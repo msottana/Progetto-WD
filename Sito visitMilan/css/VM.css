@@ -79,9 +79,14 @@ h6 {
     }
     
     .brand : hover{
-        color: #fff:
+        color: #fff;
     }
-    
+    #gigetta {
+        background-color: #AAAAAA;
+    }
+    #pierina {
+        background-color: #AAAAAA;
+    }
     .top-divider {
         margin-top: 0;
     }
@@ -100,6 +105,7 @@ h6 {
  
     .navbar {
         min-height: 0;
+        margin-bottom: 0px;
     }
  
     .navbar-default {
