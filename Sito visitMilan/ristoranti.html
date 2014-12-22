@@ -10,11 +10,10 @@
     <title>Ristoranti</title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
-</head>
-
+        <link href="css/ricerca.css" rel="stylesheet">
+    </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed">
+            <nav class="navbar navbar-inverse navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -26,7 +25,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Luoghi<span class="caret"></span></a>
+                        <li class="dropdown"><a href="luoghi.html" class="dropdown-toggle" >Luoghi</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="Castelli.html">Castelli</a></li>
                                 <li><a href="Chiese.html">Chiese e Cattedrali</a></li>
@@ -35,7 +34,7 @@
                                 <li><a href="parchi.html">Parchi e Giardini</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Eventi<span class="caret"></span></a>
+                        <li class="dropdown"><a href="eventi.html" class="dropdown-toggle" >Eventi</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="spettacoli.html">Spettacoli</a></li>
                                 <li><a href="mostre.html">Mostre ed Esposizioni</a></li>
@@ -44,21 +43,21 @@
                                 <li><a href="concerti.html">Concerti</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistica<span class="caret"></span></a>
+                        <li class="dropdown"><a href="logistica.html" class="dropdown-toggle" >Logistica</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="alloggi.html">Alloggi</a></li>
                                 <li><a href="trasporti.html">Trasporti</a></li>
                                 <li><a href="ristorazione.html">Ristorazione</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Vita Notturna<span class="caret"></span></a>
+                        <li class="dropdown"><a href="vitanotturna.html" class="dropdown-toggle" >Vita Notturna</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="discoteche.html">Discoteche</a></li>
                                 <li><a href="clubs.html">Club</a></li>
                                 <li><a href="pub.html">Pub</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Scopri Milano!<span class="caret"></span></a>
+                        <li class="dropdown"><a href="scoprimilano.html" class="dropdown-toggle" >Scopri Milano!</a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="storiaX.html">Storia</a></li>
                                 <li><a href="popolazioneX.html">Popolazione</a></li>
@@ -69,6 +68,11 @@
                             </ul>
                         </li>
                     </ul> 
+                    <ul>
+                        <form class="navbar-form navbar-left nav navbar-nav navbar-right" role="search">
+                            <a href="risultatiRicerca.html"><button type="button" class="btn btn-default"><span id="ricerca">Ricerca </span><span class="glyphicon glyphicon-search"></span></button></a>
+                        </form>
+                    </ul>
                 </div>
             </div>
         </nav>         
