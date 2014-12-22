@@ -21,7 +21,12 @@ h6 {
 .address-bar {
     display: none;
 }
- 
+.panel {
+    margin-bottom: 0px;
+}
+.page-header{
+    margin: 20px;
+}
 .navbar-brand {
     text-transform: uppercase;
     font-weight: 900;
@@ -63,12 +68,12 @@ h6 {
     .brand {
         display: inherit;
         margin: 0;
-        padding: 8px;
+        padding: 0px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
-        font-weight: 700;
+        font-size: 4em;
+        font-weight: 600;
         line-height: normal;
         color: #fff;
     }
@@ -134,7 +139,10 @@ h6 {
         clear: both;
     }
     .nav>li>a {
-        padding: 35px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .navbar-nav {
         display: table;
@@ -216,6 +224,7 @@ h6 {
 
 }
 
+
 @import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 
 
@@ -267,4 +276,3 @@ h6 {
 .btn-vk{color:#fff;background-color:#587ea3;border-color:rgba(0,0,0,0.2)}.btn-vk:hover,.btn-vk:focus,.btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{color:#fff;background-color:#4a6a89;border-color:rgba(0,0,0,0.2)}
 .btn-vk:active,.btn-vk.active,.open .dropdown-toggle.btn-vk{background-image:none}
 .btn-vk.disabled,.btn-vk[disabled],fieldset[disabled] .btn-vk,.btn-vk.disabled:hover,.btn-vk[disabled]:hover,fieldset[disabled] .btn-vk:hover,.btn-vk.disabled:focus,.btn-vk[disabled]:focus,fieldset[disabled] .btn-vk:focus,.btn-vk.disabled:active,.btn-vk[disabled]:active,fieldset[disabled] .btn-vk:active,.btn-vk.disabled.active,.btn-vk[disabled].active,fieldset[disabled] .btn-vk.active{background-color:#587ea3;border-color:rgba(0,0,0,0.2)}
-

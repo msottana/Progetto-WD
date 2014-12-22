@@ -17,6 +17,7 @@
              <!-- Custom CSS -->
         <link href="css/VM.css" rel="stylesheet">
         <link href="css/Carosel.css" rel="stylesheet">
+        <link href="css/tx3-tag-cloud.css" rel="stylesheet">
     </head>
     <body>
         <nav class="navbar navbar-inverse navbar-fixed">
@@ -29,17 +30,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">Visit Milan</a>
-                </div>
-                <div class="nav navbar-nav navbar-right">
-                    
+                <a class="navbar-brand" href="index.html">Visit Milan</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <form class="navbar-form navbar-left nav navbar-nav navbar-right" role="search">
-                            <a href="risultatiRicerca.html"><button type="button" class="btn btn-default"><span id="ricerca">Ricerca </span><span class="glyphicon glyphicon-search"></span></button></a>
-                        </form>
-                    </ul>
                     <ul class="nav navbar-nav">
                         <li class="dropdown"><a href="luoghi.html" class="dropdown-toggle" >Luoghi<span ></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -85,72 +78,212 @@
                             </ul>
                         </li>
                     </ul> 
-                     
-                    
-                    
 
                 </div>
-            </div>
-        </nav>         
+            </nav>         
         <!--CAROSELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
-         <div id="myCarousel" class="carousel slide">
-            <!-- indicatori -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
+            <div class="row">
+                <div class="col-lg-9"> 
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- indicatori -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
 
-            <div class="carousel-inner">
-                <div class="item active">
-                  <img src= "img/duomo.jpg" alt="Welcome">
-                </div>
-                <div class="item">
-                  <img src="img/shopping.jpg" alt="Second slide">
-                </div>
-            </div>
-            
-            <!-- Pulsanti -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-        </div>
-        
-        
-         <div class="container">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                              <img src= "img/duomo.jpg" alt="Welcome">
+                            </div>
+                            <div class="item">
+                              <img src="img/shopping.jpg" alt="Second slide">
+                            </div>
+                        </div>
 
-            <!-- Marketing Icons Section -->
+                        <!-- Pulsanti -->
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                <!--Login --> 
+                    <br><br><br>
+                    <button  class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Registrati</button>
+                 </div>
+
+                <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <br>
+                        <div class="bs-example bs-example-tabs">
+                            <ul id="myTab" class="nav nav-tabs">
+                              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+                              <li class=""><a href="#signup" data-toggle="tab">Registrati</a></li>
+                            </ul>
+                        </div>
+                      <div class="modal-body">
+                        <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="signin">
+                            <form class="form-horizontal">
+                            <fieldset>
+                            <!-- Sign In Form -->
+                            <!-- Text input-->
+                            <div class="control-group">
+                              <label class="control-label" for="userid">Username:</label>
+                              <div class="controls">
+                                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Username" class="input-medium" required="">
+                              </div>
+                            </div>
+
+                            <!-- Password input-->
+                            <div class="control-group">
+                              <label class="control-label" for="passwordinput">Password:</label>
+                              <div class="controls">
+                                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                              </div>
+                            </div>
+
+                            <!-- Multiple Checkboxes -->
+                            <label><input type="checkbox" name="rememberme"> Ricordati di me!</label>
+
+                            <!-- Button -->
+                            <div class="control-group">
+                              <label class="control-label" for="signin"></label>
+                              <div class="controls">
+                                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                              </div>
+                            </div>
+                            </fieldset>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup">
+                            <form class="form-horizontal">
+                            <fieldset>
+                            <!-- Sign Up Form -->
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-6">
+                                        <label class="control-label" for="Nome">Nome:</label>
+                                        <div class="controls">
+                                            <input id="Nome" name="Nome" class="form-control" type="text" class="input-large" required="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-md-6">
+                                        <label class="control-label" for="Cognome">Cognome:</label>
+                                        <div class="controls">
+                                            <input id="Cognome" name="Cognome" class="form-control" type="text" class="input-large" required="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="control-group">
+                              <label class="control-label" for="userid">Username:</label>
+                              <div class="controls">
+                                <input id="userid" name="userid" class="form-control" type="text" placeholder="Minny_92" class="input-large" required="">
+                              </div>
+                            </div>
+                            <div class="control-group">
+                              <label class="control-label" for="Email">Email:</label>
+                              <div class="controls">
+                                <input id="Email" name="Email" class="form-control" type="text" placeholder="abc@hotmail.it" class="input-large" required="">
+                              </div>
+                            </div>
+
+                            <!-- Password input-->
+                            <div class="control-group">
+                              <label class="control-label" for="password">Password:</label>
+                              <div class="controls">
+                                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                                <em>1-8 Caratteri</em>
+                              </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="control-group">
+                              <label class="control-label" for="reenterpassword">Reinserisci Password:</label>
+                              <div class="controls">
+                                <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+                              </div>
+                            </div>
+                            <label><input type="checkbox" name="terms"> I agree with the Terms and Conditions.</label>
+
+                            <!-- Button -->
+                            <div class="control-group">
+                              <label class="control-label" for="confirmsignup"></label>
+                              <div class="controls">
+                                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Registrati</button>
+                              </div>
+                            </div>
+                            </fieldset>
+                            </form>
+                      </div>
+                    </div>
+                      </div>
+                      <div class="modal-footer">
+                      <center>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Chiudi</button>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Login tramite social --> 
+                  <div class="row">
+                    <div class="col-sm-3 social-buttons">
+                      <h4>Oppure accedi tramite </h4>
+                      <a href="http://facebook.com"class="btn btn-block btn-social btn-facebook">
+                        <i class="fa fa-facebook"></i> Sign in with Facebook
+                      </a>
+                      <a href="http://plus.google.com" class="btn btn-block btn-social btn-google-plus">
+                        <i class="fa fa-google-plus"></i> Sign in with Google
+                      </a>
+                      <a href="http://linkedin.com" class="btn btn-block btn-social btn-linkedin">
+                        <i class="fa fa-linkedin"></i> Sign in with LinkedIn
+                      </a>
+                      <a href="http://twitter.com" class="btn btn-block btn-social btn-twitter">
+                        <i class="fa fa-twitter"></i> Sign in with Twitter
+                      </a>
+                    </div>
+                  </div>        
+                </div>
+            </div> 
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">
+                    <h2 class="page-header">
                         Benvenuti a Milano
-                    </h1>
+                    </h2>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4><span class="glyphicon glyphicon-globe"></span>&nbsp; EXPO 2015</h4>
                         </div>
                         <div class="panel-body">
-                            <a href="#">
+                            <a href="">
                                 <img class="img-responsive" src="img/expo.jpg" alt="">
                             </a>
                             <br><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                            <a href="#" class="btn btn-default">Scopri di più</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4><span class="glyphicon glyphicon-camera"></span>&nbsp;DUOMO</h4>
                         </div>
                         <div class="panel-body">
-                            <a href="#">
+                            <a href="chiesa-cattedraleX.html.html">
                                 <img class="img-responsive" src="img/700x400.jpg" alt="">
                             </a>
                             <br><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                            <a href="chiesa-cattedraleX.html.html" class="btn btn-default">Scopri di più</a>
                         </div>
                     </div>
                 </div>
@@ -160,38 +293,20 @@
                             <h4><span class="glyphicon glyphicon-star-empty"></span>&nbsp;TEATRO ALLA SCALA</h4>
                         </div>
                         <div class="panel-body">
+                            <a href="teatroX.html">
+                                <img class="img-responsive" src="img/allascalahome.jpg" alt="">
+                            </a>
+                            <br><br>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
+                            <a href="chiesa-cattedraleX.html.html" class="btn btn-default">Scopri di più</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4><i class="fa fa-fw fa-gift"></i> LO SHOPPING AL CORSO</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                            <a href="#" class="btn btn-default">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4><i class="fa fa-fw fa-compass"></i> Castello Sforzesco</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
             </div>
             <!-- /.row -->
             <div class="row">
                 <div id="meteo" class="col-lg-6">
-                    <h1 class="page-header">
+                    <h2 class="page-header">
                         Il meteo a Milano
                     </h1>
                     <!-- Servizi -->
@@ -207,7 +322,7 @@
                     </div>
                 </div>
                 <div id="agenda"  class="col-lg-6">
-                    <h1 class="page-header">
+                    <h2 class="page-header">
                         Agenda eventi
                     </h1>
                     <iframe src="https://www.google.com/calendar/embed?src=bl5kihoh2abmei47ttvpm62oeo%40group.calendar.google.com&ctz=Europe/Rome" style="border: 0" width="440" height="300" frameborder="0" scrolling="no"></iframe>
@@ -226,16 +341,48 @@
                     <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.2303835233!2d9.177732249999996!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilano!5e0!3m2!1sit!2sit!4v1416824031623" width="700" height="600" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Parole chiave</h2>
+                </div>
+                    <ul id="tagcloud">
+                        <li data-weight="30"><a href="chiesa-cattedraleX.html.html">Duomo</a></li>
+                        <li data-weight="22"><a href="trasporti.html">Trasporti</a></li>
+                        <li data-weight="23"><a href="clubs.html">Club</li>
+                        <li data-weight="20"><a href="ristoranti.html">Ristoranti</a></li>
+                        <li data-weight="22"><a href="shoppingX.html">Shopping</a></li>
+                        <li data-weight="26"><a href="castelloX.html">Castello Sforzesco</a></li>
+                        <li data-weight="28"><a href="sfilate.html">Sfilate   </a></li>
+                        <li data-weight="30"><a href="universitaX.html">Universitá</a></li>
+                        <li data-weight="22"><a href="teatroX.html">Teatro Alla Scala</a> </li>
+                        <li data-weight="30"><a href="mostre-esposizioniX.html">Expo</a></li>
+                    </ul>
+                </div>
+            </div>
             <!-- /.row -->
             <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>Copyright &copy; KGM_Team 2014</p>
-                    </div>
+          <div class="row">
+            <div class="col-sm-6">
+                <h5>Contattaci:</h5>
+                <p>Hai qualche domanda o vuoi lasciare un feedback? Contattaci!</p>
+                <p><a href="" title="Contact me!"><i class="fa fa-envelope"></i> Contattaci</a></p>
+            </div>
+            <div class="col-sm-6">
+                <div class="text-right">
+                <h5>Seguici su </h5>
+                <a href="http://facebook.com" class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="http://plus.google.com" class="btn btn-social-icon btn-google-plus"><i class="fa fa-google-plus"></i></a>
+                <a href="http://linkedin.com" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="http://twitter.com" class="btn btn-social-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                 </div>
+              </div>
+            <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KGM_Team 2014  | <a href="">Privacy Policy</a> | <a href="">Terms of Use</a></p>
+                </div>
+            </div>
             </footer>
-
         </div>
         <!-- /.container -->
         
@@ -268,6 +415,30 @@
                  })
             });    
         </script>
-        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+        <script type="text/javascript" src="js/jquery.tx3-tag-cloud.js" ></script> 
+        <script type="text/javascript">
+            // default multiplier is "1"
+            $(document).ready(function(){
+                $("#tagcloud").tx3TagCloud({
+                    multiplier: 2.5
+                });
+            });
+            </script>
+
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-36251023-1']);
+          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
    </body>
 </html>

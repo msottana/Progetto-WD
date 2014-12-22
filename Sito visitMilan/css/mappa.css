@@ -1,0 +1,14 @@
+#image0 {
+  line-height: 1.5em;
+  list-style-image: url('../img/image0.jpg');
+}
+
+#image1 {
+  line-height: 1.5em;
+  list-style-image: url('../img/image1.gif');
+}
+
+#image2 {
+  line-height: 1.5em;
+  list-style-image: url('../img/image2.gif');
+}

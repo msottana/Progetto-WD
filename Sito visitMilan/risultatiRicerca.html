@@ -7,7 +7,7 @@
         <meta name="description" content="Sito web per il corso di WD">
         <meta name="author" content="KGM_Team">
         <link href="css/bootstrap.css" rel="stylesheet">
-         <link href="css/search.css" rel="stylesheet">
+        <link href="css/search.css" rel="stylesheet">
     </head>
 <body>
     <!-- Navigation -->
@@ -70,13 +70,13 @@
             </div>
         </nav>     
         
-        <div class="container">
+        <div class="container" id="ricerca">
             <hgroup class="mb20">
                 <h1>Risultati di ricerca</h1>
                 <h2 class="lead"> Risultati della ricerca per <strong class="text-danger">Lorem</strong></h2>								
             </hgroup>
 
-            <div class="col-xs-12 col-sm-12 col-md-3" id="ricerca">
+            <div class="col-xs-12 col-sm-12 col-md-3">
                 <div class="panel panel-default">
                   <div class="panel-body">
                     <h4>Ricerca avanzata</h4>
@@ -86,36 +86,35 @@
                             <div class="span12">
                                 <form id="custom-search-form" class="form-search form-horizontal pull-left">
                                     <div class="input-append span12">
-                                       Cosa:  <input type="text" class="search-query" placeholder="vorresti sapere?" href="">
+                                       <a>Cosa:  </a><input type="text" class="search-query" placeholder="vorresti sapere?" href="">
                                     </div>
                                 </form>
-                            </div>
-                        
+                            </div>                        
                         </div>
                     </div>
                     <br>
-                        <div class="dropdown">
-                            In:
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                            Intero sito
-                            <span class="caret"></span>
-                          </button>
-                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="">Luoghi</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="">Eventi</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="">Logistica</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="">Vita Notturna</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="">Scopri Milano!</a></li>
-                          </ul>
-                        </div>
+                    <div class="dropdown">
+                        <a>In:  </a>
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        Intero sito
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="">Luoghi</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="">Eventi</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="">Logistica</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="">Vita Notturna</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="">Scopri Milano!</a></li>
+                      </ul>
+                    </div>
                       <br>
-                      <div class="row">
+                    <div class="row">
                           <div class="col-xs-12 col-sm-12 col-md-7">
                           </div>
                           <div class="col-xs-12 col-sm-12 col-md-5">
                             <button type="submit" class="btn btn-default" href="risultatiRicerca.html">Cerca   <span class="glyphicon glyphicon-search"></span></button>
                           </div>
-                      </div>
+                    </div>
                       
                   </div>
                 </div>
@@ -124,7 +123,7 @@
                     <h4>Filtra i risultati in base a</h4>
                       <hr>                      
                         <div class="dropdown">
-                            Ora:
+                            <a>Ora:   </a>
                           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
                             In qualsiasi momento
                             <span class="caret"></span>
