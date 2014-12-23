@@ -11,7 +11,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-    background: url('../img/swirl_pattern.png') repeat center fixed;
+    background: url('../img/CRISTAL_GLITTER__50b4ce41ca803.jpg') repeat center fixed;
     -webkit-background-size: repeat;
     -moz-background-size: repeat;
     background-size: repeat;
@@ -1221,7 +1221,7 @@ a.bg-danger:hover {
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 0px 0 0px;
   border-bottom: 1px solid #FF00BF;
 }
 ul,
@@ -6173,6 +6173,9 @@ button.close {
 .visible-lg-inline,
 .visible-lg-inline-block {
   display: none !important;
+}
+.container {
+    padding-bottom: 30px;
 }
 @media (max-width: 767px) {
   .visible-xs {

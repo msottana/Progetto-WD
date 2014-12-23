@@ -4,7 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
  body {
-    background: url('../img/swirl_pattern.png') repeat center fixed;
+    background: url('../img/CRISTAL_GLITTER__50b4ce41ca803.jpg') repeat center fixed;
     -webkit-background-size: repeat;
     -moz-background-size: repeat;
     background-size: repeat;
@@ -39,7 +39,9 @@ h6 {
     font-weight: 900;
     letter-spacing: 2px;
 }
- 
+#center {
+
+}
 .navbar-nav {
     text-transform: uppercase;
     font-weight: 200;
@@ -54,11 +56,17 @@ h6 {
 .brand-name {
     text-transform: capitalize;
 }
- 
+
+.paperelle a {
+    color: #8A0886;
+}
 .brand-before {
     margin: 15px 0;
 }
- 
+
+#pierina {
+    padding-bottom: 5px;
+}
 .brand-name {
     margin: 0;
     font-size: 4em;
@@ -85,11 +93,16 @@ h6 {
         color: #fff;
     }
     
+    
     .brand : hover{
         color: #fff;
     }
+    #sposta {
+        padding-left: 0px;
+        padding-right: 25px;
+    }
     #gigetta {
-        background-color: #AAAAAA;
+        background-color: #FA58D0;
     }
     #pierina {
         background-color: #AAAAAA;
@@ -143,7 +156,7 @@ h6 {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.30em;
-    }
+    }    
 }
 @media screen and (min-width:1200px) {
     .box:after {
@@ -152,7 +165,6 @@ h6 {
         clear: both;
     }
     .nav>li>a {
-        padding-bottom: 5px;
         padding-top: 5px;
         padding-left: 20px;
         padding-right: 20px;
@@ -221,10 +233,21 @@ h6 {
         display: none;
     }
     #agenda {
-        
+        display: none;
     }
 }
-
+@media (max-width: 768px){
+    .sparisci{
+        display: none;
+    }
+}
+.dropdown-menu{
+    padding-top: 0;
+}
+#titoletto {
+    text-decoration : none;
+    color: #FE2EC8;
+}
 .prettyline {
   height: 5px;
   border-top: 0;

@@ -23,7 +23,7 @@
         <nav class="navbar navbar-inverse navbar-fixed">
             <div class="container-fluid">
                 <!-- Da mettere nei CSS lo stile -->
-                <a class="brand" href="index.html" style="text-decoration: none; color: #ffffff">Visit Milan</a>
+                <a class="brand" href="index.html" id="titoletto">Visit Milan</a>
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -75,7 +75,6 @@
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="storiaX.html">Storia</a></li>
                                 <li><a href="popolazioneX.html">Popolazione</a></li>
-                                <li><a href="territorioX.html">Territorio</a></li>
                                 <li><a href="cucinaX.html">Cucina</a></li>
                                 <li><a href="economiaX.html">Economia</a></li>
                                 <li><a href="universitaX.html">Università</a></li>
@@ -87,7 +86,21 @@
                 </div>
             </nav>         
         <!--CAROSELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
-                <div class="row" id="gigetta">
+                <div class="row sparisci" id="gigetta">
+                    <div class="col-lg-2 text-center">
+                        <br><br><br>
+                        <h3>Newsletter</h3>
+
+                        <p>Vuoi ricevere le news?</p>
+
+                        <form action="" method="post">
+                            <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                                <input type="text" id="" name="" placeholder="your@email.com">
+                            </div>
+                            <br />
+                            <input type="submit" value="Sottoscriviti!" class="btn btn-large" />
+                      </form>                                    
+                    </div>                        
                     <div class="col-lg-8"> 
                         <div id="myCarousel" class="carousel slide">
                             <!-- indicatori -->
@@ -110,7 +123,7 @@
                             <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
                         </div>
                     </div>
-                    <div class="col-lg-3 text-center">
+                    <div class="col-lg-2 text-center" id="sposta">
                     <!--Login --> 
                         <br><br><br>
                         <button  class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Sign In/Registrati</button>
@@ -236,20 +249,23 @@
                       </div>
                     </div>
                 <!-- Login tramite social --> 
-                          <h4>Oppure accedi tramite </h4>
+                        <h4>Oppure accedi tramite </h4>
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10">
                           <a href="http://facebook.com"class="btn btn-block btn-social btn-facebook">
-                            <i class="fa fa-facebook"></i> Sign in with Facebook
+                            <i class="fa fa-facebook"></i>Facebook
                           </a>
                           <a href="http://plus.google.com" class="btn btn-block btn-social btn-google-plus">
-                            <i class="fa fa-google-plus"></i> Sign in with Google
+                            <i class="fa fa-google-plus"></i>Google
                           </a>
                           <a href="http://linkedin.com" class="btn btn-block btn-social btn-linkedin">
-                            <i class="fa fa-linkedin"></i> Sign in with LinkedIn
+                            <i class="fa fa-linkedin"></i>LinkedIn
                           </a>
                           <a href="http://twitter.com" class="btn btn-block btn-social btn-twitter">
-                            <i class="fa fa-twitter"></i> Sign in with Twitter
+                            <i class="fa fa-twitter"></i>Twitter
                           </a>
-                        </div>        
+                        </div>
+                    </div>        
                 </div>
                 <div class="container">
                 <div class="row">
@@ -264,12 +280,12 @@
                                 <h4><span class="glyphicon glyphicon-globe"></span>&nbsp; EXPO 2015</h4>
                             </div>
                             <div class="panel-body">
-                                <a href="">
+                                <a href="mostre-esposizioniX.html">
                                     <img class="img-responsive" src="img/expo.jpg" alt="">
                                 </a>
                                 <br><br>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                <a href="#" class="btn btn-default">Scopri di più</a>
+                                <a href="mostre-esposizioniX.html" class="btn btn-default">Scopri di più</a>
                             </div>
                         </div>
                     </div>
@@ -299,13 +315,13 @@
                                 </a>
                                 <br><br>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                                <a href="chiesa-cattedraleX.html.html" class="btn btn-default">Scopri di più</a>
+                                <a href="teatroX.html" class="btn btn-default">Scopri di più</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- /.row -->
-                <div class="row">
+                <div class="row sparisci">
                     <div id="meteo" class="col-lg-6">
                         <h2 class="page-header">
                             Il meteo a Milano
@@ -342,7 +358,7 @@
                         <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89547.2303835233!2d9.177732249999996!3d45.46273385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c1493f1275e7%3A0x3cffcd13c6740e8d!2sMilano!5e0!3m2!1sit!2sit!4v1416824031623" width="700" height="600" frameborder="0" style="border:0"></iframe>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row sparisci">
                     <div class="col-lg-12">
                         <h2 class="page-header">Parole chiave</h2>
                     </div>
@@ -400,10 +416,10 @@
                     <!-- /.row -->
                     <!-- Footer -->
                  </div> 
-                <div class="container-fluid" id="pierina">
+                <div class="container-fluid sparisci" id="pierina">
                       <div class="row">
                           <div class="col-lg-1"></div>
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 paperelle">
                             <h5>Contattaci:</h5>
                             <p>Hai qualche domanda o vuoi lasciare un feedback? Contattaci!</p>
                             <p><a href="" title="Contact me!"><i class="fa fa-envelope"></i> Contattaci</a></p>
@@ -422,10 +438,10 @@
                     <div class="row">
                             <div class="col-lg-1"></div>
                           
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 paperelle">
                                 <p>Copyright &copy; KGM_Team 2014  | <a href="">Privacy Policy</a> | <a href="">Terms of Use</a></p>
                             </div>
-                            <div class="col-lg-2 text-right">
+                            <div class="col-lg-2 text-right paperelle">
                                 <p><a href="mappa_sito.html">Mappa del sito</a></p>
                             </div>
                             <div class="col-lg-1"></div>
